@@ -751,10 +751,10 @@ body {
 }
 
 @media (max-width: 1230px) {
-    .reviews__swiper.swiper {
-      margin-left: -15px;
-    }
+  .reviews__swiper.swiper {
+    margin-left: -15px;
   }
+}
 @media (max-width: 991.98px) {
   .reviews {
     padding-top: 80px;
@@ -766,10 +766,10 @@ body {
   .slide-swiper-reviews__body {
     padding-left: 15px;
   }
-  .slide-swiper-reviews{
+  .slide-swiper-reviews {
     flex-direction: column;
   }
-  .slide-swiper-reviews__picture{
+  .slide-swiper-reviews__picture {
     margin-bottom: 25px;
   }
 }
@@ -781,7 +781,7 @@ body {
   .reviews__title {
     margin-bottom: 30px;
   }
-  .swiper-reviews__pagination.swiper-pagination{
+  .swiper-reviews__pagination.swiper-pagination {
     position: relative;
     bottom: 0;
     justify-content: center;
@@ -790,85 +790,223 @@ body {
   }
 }
 @media (max-width: 479.98px) {
-    .slide-swiper-reviews__image {
-        width: 270px;
-        height: 270px;
-    }
-    .slide-swiper-reviews__image::before {
-        content: "";
-        position: absolute;
-        width: 225px;
-        height: 187px;
-        top: 50px;
-        left: -80px;
-        transform: rotate(-10deg);
-        background: #ff6428;
-        border-radius: 40px 0px 400px 400px;
-      }
-      .slide-swiper-reviews__text{
-        font-size: 18px;
-      }
-      .slide-swiper-reviews__text:not(:last-child){
-        margin-bottom: 25px;
-      }
-      .swiper-reviews__pagination{
-        transform: translate(0px, 0px);
-        padding-top: 20px;
-      }
+  .slide-swiper-reviews__image {
+    width: 270px;
+    height: 270px;
+  }
+  .slide-swiper-reviews__image::before {
+    content: "";
+    position: absolute;
+    width: 225px;
+    height: 187px;
+    top: 50px;
+    left: -80px;
+    transform: rotate(-10deg);
+    background: #ff6428;
+    border-radius: 40px 0px 400px 400px;
+  }
+  .slide-swiper-reviews__text {
+    font-size: 18px;
+  }
+  .slide-swiper-reviews__text:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .swiper-reviews__pagination {
+    transform: translate(0px, 0px);
+    padding-top: 20px;
+  }
 }
 /*------------FAVORITE---------------------*/
 .favorite {
-    padding-bottom: 120px;
+  padding-bottom: 120px;
 }
 .favorite__container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .favorite__body {
-    flex: 0 1 50%;
+  flex: 0 1 50%;
 }
 .favorite__title {
-    text-align: left;
-    font-size: 48px;
-    line-height: 140%;
+  text-align: left;
+  font-size: 48px;
+  line-height: 140%;
 }
-.favorite__title:not(:last-child){
-    margin-bottom: 60px;
+.favorite__title:not(:last-child) {
+  margin-bottom: 60px;
 }
 .favorite__apps {
 }
 .apps-favorite {
-    display: flex;
-    gap: 25px;
+  display: flex;
+  gap: 25px;
 }
-.apps-favorite__item {}
-.apps-favorite__item img{
-    max-width: 100%;
+.apps-favorite__item {
+}
+.apps-favorite__item img {
+  max-width: 100%;
 }
 .favorite__images {
-    flex: 0 1 50%;
-    text-align: center;
+  flex: 0 1 50%;
+  text-align: center;
 }
 .favorite__images img {
-    max-width: 100%;
+  max-width: 100%;
 }
-@media (max-width: 991.98px){
-    .favorite {
-        padding-bottom: 50px;
-    }
-    .favorite__container{
-        flex-direction: column;
-    }
-    .reviews__title{
-        font-size: 38px;
-    }
-    .favorite__title:not(:last-child){
-        margin-bottom: 25px;
-    }
+@media (max-width: 991.98px) {
+  .favorite {
+    padding-bottom: 50px;
+  }
+  .favorite__container {
+    flex-direction: column;
+  }
+  .reviews__title {
+    font-size: 38px;
+  }
+  .favorite__title:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }
-@media (max-width: 767.98px){
-    .favorite {
-        padding-bottom: 30px;
-    }
+@media (max-width: 767.98px) {
+  .favorite {
+    padding-bottom: 30px;
+  }
 }
 /*---------FOOTER------------------*/
+.footer {
+  background: #eeeeee;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.footer__container {
+}
+.footer__body {
+}
+
+.body-footer {
+  display: flex;
+  gap: 50px;
+}
+.body-footer__column {
+}
+.body-footer__column_full {
+  flex: 1 1 auto;
+}
+.body-footer__logo {
+  display: inline-block;
+}
+.body-footer__logo:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.body-footer__contacts {
+}
+
+.contacts-footer {
+}
+.contacts-footer__item {
+}
+.contacts-footer__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contacts-footer__link {
+  color: #666;
+  display: inline-block;
+  line-height: 24px;
+  padding-left: 44px;
+}
+.contacts-footer__link:hover {
+  text-decoration: underline;
+}
+.contacts-footer__link_mail {
+  background: url("../img/footer/sms.svg") left no-repeat;
+}
+.contacts-footer__link_location {
+  background: url("../img/footer/location.svg") left no-repeat;
+}
+
+.body-footer__menu {
+}
+
+.menu-footer {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.menu-footer__column {
+}
+.menu-footer__title {
+  text-transform: uppercase;
+  color: #121212;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.menu-footer__list {
+  padding-inline-start: 0;
+}
+.menu-footer__item {
+}
+.menu-footer__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.menu-footer__link {
+  color: #666;
+}
+.menu-footer__link:hover {
+  text-decoration: underline;
+}
+
+.body-footer__social {
+}
+
+.social-footer {
+}
+.social-footer__title {
+  text-transform: uppercase;
+  color: #121212;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.social-footer__items {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.social-footer__item {
+}
+
+.footer__copy {
+  padding-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .body-footer {
+    flex-wrap: wrap;
+  }
+  .body-footer__column:first-child {
+    flex: 1 1 100%;
+  }
+  .body-footer__column_full {
+    flex: 0 1 50%;
+  }
+  .menu-footer {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer__copy {
+    padding-top: 50px;
+  }
+}
